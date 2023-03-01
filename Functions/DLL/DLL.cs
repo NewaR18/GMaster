@@ -1,4 +1,5 @@
 ﻿using Functions.Models;
+using PqgridWithDatabase.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -579,6 +580,42 @@ namespace Functions.Data_Link_Layer
             sb.Append(json);
             sb.Append("}");
             return sb;
+        }
+        public List<Wards> getdetails()
+        {
+            List<Wards> wards = new List<Wards>();
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select* from TblWardDetails";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandTimeout = 30;
+                    conn.Open();
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                Wards w1 = new Wards();
+                                w1.ward = Convert.ToInt32(rd["Ward_Id"]);
+                                w1.name = Convert.ToString(rd["Ward_Name"]);
+                                w1.ward_no = Convert.ToInt32(rd["Ward_No"]);
+                                w1.email = Convert.ToString(rd["Ward_Email"]);
+                                w1.phone = Convert.ToString(rd["Ward_Phone"]);
+                                w1.location = Convert.ToString(rd["Ward_Location"]);
+                                w1.population = Convert.ToString(rd["Ward_Population"]);
+                                w1.chief = Convert.ToString(rd["Ward_Chief_Name"]);
+                                w1.chiefphone = Convert.ToString(rd["Ward_Chief_Phone"]);
+                                wards.Add(w1);
+                            }
+                        }
+                    }
+                }
+            }
+            return wards;
         }
     }
 }

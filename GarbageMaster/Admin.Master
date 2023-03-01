@@ -61,9 +61,9 @@
                      </li>
                      <li><a href="Users.aspx"><i class="fa fa-table purple_color2"></i> <span>Users</span></a></li>
                      <li><a href="WardsCards.aspx"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
-                     <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Charts</span></a></li>
+                     <li><a href="Charts.aspx"><i class="fa fa-briefcase blue1_color"></i> <span>Charts</span></a></li>
                      <li>
-                        <a href="contact.html">
+                        <a href="Wards.aspx">
                         <i class="fa fa-paper-plane red_color"></i> <span>Wards</span></a>
                      </li>
                      <li><a href="Admin.aspx"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
@@ -121,10 +121,10 @@
       <!-- owl carousel -->
        <script src="../wwwroot/js/CDNs/owl.carousel.js"></script>
       <!-- chart js -->
-       <script src="../wwwroot/js/CDNs/Chart.min.js"></script>
+<%--       <script src="../wwwroot/js/CDNs/Chart.min.js"></script>
        <script src="../wwwroot/js/CDNs/Chart.bundle.min.js"></script>
        <script src="../wwwroot/js/CDNs/utils.js"></script>
-       <script src="../wwwroot/js/CDNs/analyser.js"></script>
+       <script src="../wwwroot/js/CDNs/analyser.js"></script>--%>
       <!-- nice scrollbar -->
        <script src="../wwwroot/js/CDNs/perfect-scrollbar.min.js"></script>
       <script>

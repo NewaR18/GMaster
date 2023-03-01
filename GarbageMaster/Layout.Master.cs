@@ -45,7 +45,7 @@ namespace GarbageMaster
         }
         protected void Admin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../Pages/Admin.aspx");
+            Response.Redirect("../Pages/Admin2.aspx");
         }
         protected void Contact_Click(object sender, EventArgs e)
         {

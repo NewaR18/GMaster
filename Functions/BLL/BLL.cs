@@ -1,5 +1,6 @@
 ﻿using Functions.Data_Link_Layer;
 using Functions.Models;
+using PqgridWithDatabase.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Mail;
@@ -186,6 +187,10 @@ namespace Functions.Business_Logic_Layer
         public StringBuilder GetUserDetails(int pq_curPage, int pq_rPP)
         {
             return _dll.GetUserData(pq_curPage, pq_rPP);
+        }
+        public List<Wards> getdetails()
+        {
+            return _dll.getdetails();
         }
     }
 }

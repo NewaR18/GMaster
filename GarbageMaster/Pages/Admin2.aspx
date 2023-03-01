@@ -43,14 +43,6 @@
                                         beginAtZero: true 
                                     }
                                 }]
-                            },
-                            plugins: {
-                                legend: {
-                                    display: false,
-                                    labels: {
-                                        color: 'rgb(255, 99, 132)'
-                                    }
-                                }
                             }
                         }
                     });

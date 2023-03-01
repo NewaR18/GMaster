@@ -1,4 +1,7 @@
 ﻿using Functions.Business_Logic_Layer;
+using Functions.Data_Link_Layer;
+using GarbageMaster.Pages;
+using System.Collections.Generic;
 using System.Text;
 using System.Web.Mvc;
 
@@ -66,6 +69,11 @@ namespace GarbageMaster.Controllers
         public string getuserdetails(int pq_curPage, int pq_rPP)
         {
             return _repo.GetUserDetails(pq_curPage,pq_rPP).ToString();
+        }
+        [HttpGet]
+        public JsonResult GetWards()
+        {
+            return Json(_repo.getdetails(), JsonRequestBehavior.AllowGet);
         }
     }
 }

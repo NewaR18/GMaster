@@ -47,6 +47,7 @@
     <Compile Include="BLL\BLL.cs" />
     <Compile Include="DLL\DLL.cs" />
     <Compile Include="Models\Users.cs" />
+    <Compile Include="Models\Wards.cs" />
     <Compile Include="Models\WasteWithWard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

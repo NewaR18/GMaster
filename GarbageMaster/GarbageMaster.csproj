@@ -154,6 +154,13 @@
     <Compile Include="Pages\Admin2.aspx.designer.cs">
       <DependentUpon>Admin2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Charts.aspx.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Charts.aspx.designer.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +230,13 @@
     </Compile>
     <Compile Include="Pages\Users.aspx.designer.cs">
       <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Wards.aspx.cs">
+      <DependentUpon>Wards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Wards.aspx.designer.cs">
+      <DependentUpon>Wards.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\WardsCards.aspx.cs">
       <DependentUpon>WardsCards.aspx</DependentUpon>
@@ -489,6 +503,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Pages\Admin.aspx" />
     <Content Include="Pages\Admin2.aspx" />
+    <Content Include="Pages\Charts.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Maps.aspx" />
     <Content Include="Pages\NewPassword.aspx" />
@@ -499,6 +514,7 @@
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Users.aspx" />
+    <Content Include="Pages\Wards.aspx" />
     <Content Include="Pages\WardsCards.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
     <Content Include="Pages\ZWard1.aspx" />
@@ -686,6 +702,7 @@
     <Content Include="wwwroot\js\CDNs\sweetalert2.all.min.js" />
     <Content Include="wwwroot\js\CDNs\utils.js" />
     <Content Include="wwwroot\js\DispayUsers.js" />
+    <Content Include="wwwroot\js\DisplayWards.js" />
     <Content Include="wwwroot\js\knockout-3.1.0.js" />
     <Content Include="wwwroot\js\NewPassword.js" />
     <Content Include="wwwroot\js\pinenter.js" />
