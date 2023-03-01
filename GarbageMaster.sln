@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageMaster", "GarbageMaster\GarbageMaster.csproj", "{790A73F6-BF14-43B2-AE69-C18E3FBEF235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{62D45FBB-B7B5-44EC-9FFC-74D0340B8D60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{790A73F6-BF14-43B2-AE69-C18E3FBEF235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790A73F6-BF14-43B2-AE69-C18E3FBEF235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790A73F6-BF14-43B2-AE69-C18E3FBEF235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790A73F6-BF14-43B2-AE69-C18E3FBEF235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D45FBB-B7B5-44EC-9FFC-74D0340B8D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D45FBB-B7B5-44EC-9FFC-74D0340B8D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D45FBB-B7B5-44EC-9FFC-74D0340B8D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D45FBB-B7B5-44EC-9FFC-74D0340B8D60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A150ED9-6D1C-40FA-B5FF-4D6DDD2AF558}
+	EndGlobalSection
+EndGlobal

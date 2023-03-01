@@ -1,0 +1,14 @@
+﻿body {
+}
+.myfontstyle2 {
+    font-family: Serif;
+    font-size: 28px !important;
+    color: #04736a !important;
+}
+.leaflet-control-attribution {
+    display: none;
+}
+#map{
+    position:relative!important;
+    z-index:1;
+}

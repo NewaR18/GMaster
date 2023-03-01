@@ -1,0 +1,140 @@
+﻿.team .member {
+    margin-bottom: 20px;
+    background: #04736a;
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .member-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.team .member .member-info-content {
+    position: absolute;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.team .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.team .member .social {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transition: left ease-in-out 0.3s;
+    background: rgba(11, 35, 65, 0.5);
+    text-align: center;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.team .member .social a:hover {
+    color: #ed502e;
+}
+
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(11, 35, 65, 0.9) 0%, rgba(11, 35, 65, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.team .member:hover .member-info-content {
+    bottom: 30px;
+    transition: bottom 0.4s;
+}
+
+.team .member:hover .social {
+    left: 0;
+    transition: left ease-in-out 0.3s;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+a {
+    color: #ed502e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1775d;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f6f9fd;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0f2f57;
+}
+.mypdesc{
+    color:#666666;
+}

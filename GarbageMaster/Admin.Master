@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="GarbageMaster.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+      <title>Admin</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+      <link rel="icon" href="wwwroot/images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+    <link href="wwwroot/css/CDNS/bootstrap.min.css" rel="stylesheet" />
+      <!-- site css -->
+    <link href="wwwroot/css/CDNS/style.css" rel="stylesheet" />
+      <!-- responsive css -->
+    <link href="wwwroot/css/CDNS/responsive.css" rel="stylesheet" />
+      <!-- color css -->
+    <link href="wwwroot/css/CDNS/color_2.css" rel="stylesheet" />
+      <!-- select bootstrap -->
+    <link href="wwwroot/css/CDNS/bootstrap-select.css" rel="stylesheet" />
+      <!-- scrollbar css -->
+    <link href="wwwroot/css/CDNS/perfect-scrollbar.css" rel="stylesheet" />
+      <!-- custom css -->
+    <link href="wwwroot/css/CDNS/custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="dashboard dashboard_1">
+    <div class="full_container">
+         <div class="inner_container">
+            <nav id="sidebar">
+               <div class="sidebar_blog_1">
+                  <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="../wwwroot/images/logo2.png" alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <div class="user_img"><img class="img-responsive" src="../wwwroot/images/logo2.png" alt="#" /></div>
+                        <div class="user_info">
+                           <h6>Admin</h6>
+                           <p><span class="online_animation"></span> Online</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="sidebar_blog_2">
+                  <h4>General</h4>
+                  <ul class="list-unstyled components">
+                     <li class="active">
+                        <a href="Admin2.aspx"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                     </li>
+                     <li><a href="Users.aspx"><i class="fa fa-table purple_color2"></i> <span>Users</span></a></li>
+                     <li><a href="WardsCards.aspx"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
+                     <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Charts</span></a></li>
+                     <li>
+                        <a href="contact.html">
+                        <i class="fa fa-paper-plane red_color"></i> <span>Wards</span></a>
+                     </li>
+                     <li><a href="Admin.aspx"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
+                        <div class="logo_section">
+                           <a href="index.html"><img class="img-responsive" src="../wwwroot/images/logo2.png" alt="#" /></a>
+                        </div>
+                        <div class="right_topbar">
+                           <div class="icon_info">
+                              <ul>
+                                 
+                              </ul>
+                              <ul class="user_profile_dd">
+                                 <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="../wwwroot/images/logo2.png" alt="#" /><span class="name_user">Admin</span></a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="profile.html">My Profile</a>
+                                       <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+                <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+            </div>
+      
+               <!-- end topbar -->
+    
+    </div>
+    </div>
+       <script src="../wwwroot/js/CDNs/popper.min.js"></script>
+       <script src="../wwwroot/js/CDNs/bootstrap.min.js"></script>
+      <!-- wow animation -->
+       <script src="../wwwroot/js/CDNs/animate.js"></script>
+      <!-- select country -->
+       <script src="../wwwroot/js/CDNs/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+       <script src="../wwwroot/js/CDNs/owl.carousel.js"></script>
+      <!-- chart js -->
+       <script src="../wwwroot/js/CDNs/Chart.min.js"></script>
+       <script src="../wwwroot/js/CDNs/Chart.bundle.min.js"></script>
+       <script src="../wwwroot/js/CDNs/utils.js"></script>
+       <script src="../wwwroot/js/CDNs/analyser.js"></script>
+      <!-- nice scrollbar -->
+       <script src="../wwwroot/js/CDNs/perfect-scrollbar.min.js"></script>
+      <script>
+          var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+       <script src="../wwwroot/js/CDNs/custom.js"></script>
+      <script></script>
+</body>
+</html>

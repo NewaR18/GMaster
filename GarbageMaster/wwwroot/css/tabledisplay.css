@@ -1,0 +1,59 @@
+﻿section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f6f9fd;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+a{
+    color:black;
+}
+
+    .section-title p {
+        margin: 0;
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #012970!important;
+    }
+
+.myownlink234 {
+    color: #012970;
+    font-family: 'Courier New';
+    font-size: 32px;
+}
+.myownlink234:hover{
+    color: #012999;
+    font-family: 'Courier New';
+    font-size: 32px;
+    text-decoration:underline; 
+}
+.tomaketextinteresting {
+    width: 50%;
+    font-family: 'Courier New';
+    font-size: 32px;
+}
+.tomaketextouterdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom:120px;
+}
+.myfwidth{
+    width:100%;
+}
+.myfwidth2 {
+    width: 20%;
+}
+.myfwidth3 {
+    width: 30%;
+}
+.myfwidth4 {
+    width: 5%;
+}

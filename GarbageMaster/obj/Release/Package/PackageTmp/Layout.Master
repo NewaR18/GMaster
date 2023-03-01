@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="GarbageMaster.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/wwwroot/css/layout2.css"/>
+</head>
+<body>
+            <form id="form1" runat="server">
+                <nav class="navbar navbar-expand-sm defcolor2 my-0">
+                    <div>
+                      <a class="navbar-brand" href="Pages/HomePage.aspx"><img src="~/wwwroot/images/logo1.png"  runat="server"  class="logo" alt="logo" /></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
+                  <div class="collapse navbar-collapse hide" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item active">
+                        <asp:LinkButton ID="LinkButton1" class="nav-link myownlink" runat="server" OnClick="HomeLink_Click">Home</asp:LinkButton>
+                      </li>
+                      <li class="nav-item">
+                        <asp:LinkButton ID="LinkButton3" class="nav-link myownlink" runat="server" OnClick="UpdateData_Click">Garbdate</asp:LinkButton>
+                      </li>
+                        <li class="nav-item">
+                        <asp:LinkButton ID="LinkButton7" class="nav-link myownlink" runat="server" OnClick="Services_Click">Services</asp:LinkButton>
+                      </li>
+                       <li class="nav-item">
+                        <asp:LinkButton ID="LinkButton4" class="nav-link myownlink" runat="server" OnClick="Team_Click">Team</asp:LinkButton>
+                      </li>
+                        <li class="nav-item">
+                        <asp:LinkButton ID="LinkButton5" class="nav-link myownlink" runat="server" OnClick="Contact_Click">Contacts</asp:LinkButton>
+                      </li>
+                        <li class="nav-item">
+                        <asp:LinkButton ID="Admin01" class="nav-link myownlink" runat="server" OnClick="Admin_Click">Admin</asp:LinkButton>
+                      </li>
+                      <li class="nav-item">
+                        <asp:LinkButton ID="Register01" class="nav-link myownlink registerlogin2 pt-0 pb-0 mt-2" runat="server" OnClick="Register_Click" Visible=true>Register/Login</asp:LinkButton>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <asp:LinkButton ID="Profile01" class="nav-link dropdown-toggle myownlink profile02"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" OnClick="Profile01_Click" Visible=false>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                          </asp:LinkButton>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <asp:LinkButton ID="LinkButton2" class="dropdown-item myheight-2 mypadding-0" runat="server" OnClick="Dashboard_Click">Dashboard</asp:LinkButton>
+                          <asp:LinkButton ID="LinkButton6" class="dropdown-item myheight-2 mypadding-0" runat="server" OnClick="Logout_Click">Log out</asp:LinkButton>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                <div class="defcolor3">
+                <footer class="row py-5 my-0 mx-5 border-top">
+    <div class="col mb-2 me-3">
+      <a href="Pages/HomePage.aspx" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="~/wwwroot/images/logo2.png"  runat="server"  class="logo2" alt="logo" />
+      </a>
+      <p class="est">Garbage Master</p>
+      <p class="est">Established in 2023</p>
+    </div>
+
+
+    <div class="col-2 mb-3 text-light quicklinks2">
+      <h5>Quick Links</h5>
+      <ul class="nav flex-column my-0">
+        <li class="nav-item mb-2"><a href="HomePage.aspx" class="nav-link p-0 text-light myheight-2">Home</a></li>
+        <li class="nav-item mb-2"><a href="Wastedata.aspx" class="nav-link p-0 text-light myheight-2">Garbdate</a></li>
+        <li class="nav-item mb-2"><a href="TableDisplay.aspx" class="nav-link p-0 text-light myheight-2">History</a></li>
+        <li class="nav-item mb-2"><a href="Maps.aspx" class="nav-link p-0 text-light myheight-2">Maps</a></li>
+        <li class="nav-item mb-2"><a href="Teams.aspx" class="nav-link p-0 text-light myheight-2">Team</a></li>
+      </ul>
+    </div>
+
+    <div class="col-4 mb-5 services2">
+      <h5>Our Services</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Gather waste data drom civilians</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Provide Citizens white wide coverage of waste data</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Display map representation of waste data</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Promote Waste Segregation</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Proper Waste Management System</a></li>
+      </ul>
+    </div>
+
+    <div class="col-4 mb-5 services2">
+      <h5>Contact us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Ph No: +977 986111726</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Email: sudipshrestha960@gmail.com</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Tarakeshwor-9, Kathmandu</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Street 219 P.O. 4050</a></li>
+      </ul>
+    </div>
+  </footer>
+        </div>
+        </form>
+   
+</body>
+</html>

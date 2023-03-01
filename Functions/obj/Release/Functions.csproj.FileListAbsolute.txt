@@ -1,0 +1,6 @@
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\bin\Release\Functions.dll
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\bin\Release\Functions.pdb
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\obj\Release\Functions.csproj.AssemblyReference.cache
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\obj\Release\Functions.csproj.CoreCompileInputs.cache
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\obj\Release\Functions.dll
+C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster221\GarbageMaster119\Functions\obj\Release\Functions.pdb
