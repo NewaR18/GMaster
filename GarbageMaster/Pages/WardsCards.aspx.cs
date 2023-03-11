@@ -1,4 +1,5 @@
 ﻿using Functions.Data_Link_Layer;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,9 @@ namespace GarbageMaster.Pages
             Label30.Text = list2[29].ToString();
             Label31.Text = list2[30].ToString();
             Label32.Text = list2[31].ToString();
+            string json = JsonConvert.SerializeObject(list2);
+            string script = $"MakeitColorized({json});";
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", script, true);
         }
     }
 }

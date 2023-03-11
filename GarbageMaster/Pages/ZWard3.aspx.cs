@@ -49,11 +49,12 @@ namespace GarbageMaster.Pages
         protected void TruckSent(object sender, EventArgs e)
         {
             _bll.mailsend(Label3.Text, 3);
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "AlertforTruckSent()", true);
         }
         protected void Checkedout(object sender, EventArgs e)
         {
             _dll.setonfire(3);
-            Response.Redirect("ZWard3.aspx");
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "AlertforCheckedOut('ZWard3.aspx')", true);
         }
     }
 }

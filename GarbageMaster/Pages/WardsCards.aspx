@@ -1,5 +1,37 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="WardsCards.aspx.cs" Inherits="GarbageMaster.Pages.WardsCards" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+         .counter_section{
+             display:block;
+         }
+         .couter_icon{
+             width:100%!important;
+         }
+         .makeitcenter{
+             display:flex!important;
+             justify-content:center!important
+         }
+         .couter_icon div{
+             padding:0px;
+         }
+         .head_couter{
+             text-align:center;
+         }
+     </style>
+    <script>
+        function MakeitColorized(list2) {
+            for (var i = 0; i < list2.length; i++) {
+                if (list2[i] < 9) {
+                    document.getElementById("ContentPlaceHolder1_Label" + (i + 1)).style.color = "#48bf53";
+                } else if (list2[i] < 17) {
+                    document.getElementById("ContentPlaceHolder1_Label" + (i + 1)).style.color = "#e69b00";
+                } else {
+                    document.getElementById("ContentPlaceHolder1_Label" + (i + 1)).style.color = "#ff0000";
+                }
+                
+            }
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="midde_cont">
@@ -654,4 +686,5 @@
                   </div>
 
                </div>
+    
 </asp:Content>

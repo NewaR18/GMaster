@@ -2,6 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+     <style>
+         .counter_section{
+             display:block;
+         }
+         .couter_icon{
+             width:100%!important;
+         }
+         .makeitcenter{
+             display:flex!important;
+             justify-content:center!important
+         }
+         .couter_icon div{
+             padding:0px;
+         }
+     </style>
     <script>
         $(document).ready(function () {
             $.ajax({
@@ -40,9 +55,18 @@
                             scales: {
                                 yAxes: [{
                                     ticks: {
-                                        beginAtZero: true 
+                                        beginAtZero: true
                                     }
                                 }]
+                            },
+                            legend: {
+                                display: false
+                            },
+                            onClick: (event, elements, chart) => {
+                                if (elements[0]) {
+                                    const i = elements[0]._index;
+                                    window.location = "ZWard" + (i + 1) + ".aspx"
+                                }
                             }
                         }
                     });
@@ -70,23 +94,26 @@
                         <div class="col-md-6 col-lg-3">
                            <div class="full counter_section margin_bottom_30">
                               <div class="couter_icon">
-                                 <div> 
+                                 <div class="makeitcenter"> 
                                     <i class="fa fa-user yellow_color"></i>
                                  </div>
                               </div>
                               <div class="counter_no">
                                  <div>
                                      <div class="makeitcenter">
+                                         <div>
                                     <asp:Label ID="lblUsers" class="total_no" runat="server" Text="0"></asp:Label>
-                                     </div>
                                     <p class="head_couter">Users</p>
+                                             </div>
+                                     </div>
+                                    
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                            <div class="full counter_section margin_bottom_30">
-                              <div class="couter_icon">
+                              <div class="couter_icon ">
                                  <div class="makeitcenter"> 
                                      <img width="50" height="50" src="../wwwroot/images/icons8-spinach-96.png" />
                                  </div>
@@ -94,9 +121,12 @@
                               <div class="counter_no">
                                  <div>
                                      <div class="makeitcenter">
+                                         <div>
                                     <asp:Label ID="lblGreen" class="total_no" runat="server" Text="0"></asp:Label>
+                                         <p class="head_couter">Greens</p>
+                                             </div>
                                      </div>
-                                    <p class="head_couter">Greens</p>
+                                    
                                  </div>
                               </div>
                            </div>
@@ -111,9 +141,11 @@
                               <div class="counter_no">
                                  <div>
                                     <div class="makeitcenter">
+                                        <div>
                                     <asp:Label ID="lblYellow" class="total_no" runat="server" Text="0"></asp:Label>
+                                        <p class="head_couter">Yellows</p>
+                                            </div>
                                      </div>
-                                    <p class="head_couter">Yellows</p>
                                  </div>
                               </div>
                            </div>
@@ -128,9 +160,12 @@
                               <div class="counter_no">
                                  <div>
                                     <div class="makeitcenter">
+                                        <div>
                                     <asp:Label ID="lblRed" class="total_no" runat="server" Text="0"></asp:Label>
+                                        <p class="head_couter">Reds</p>
+                                        </div>
                                      </div>
-                                    <p class="head_couter">Reds</p>
+                                    
                                  </div>
                               </div>
                            </div>

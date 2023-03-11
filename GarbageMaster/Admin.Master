@@ -33,6 +33,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body class="dashboard dashboard_1">
+    <form id="form2" runat="server">
     <div class="full_container">
          <div class="inner_container">
             <nav id="sidebar">
@@ -83,15 +84,19 @@
                         </div>
                         <div class="right_topbar">
                            <div class="icon_info">
-                              <ul>
-                                 
+                              <ul class="navbar-nav ms-auto">
+                                  <li class="nav-item active d-flex align-items-align-items-center" style="margin: 5px 20px 0px 0px">
+                                      <asp:LinkButton ID="LinkButton1" class="nav-link myownlink" runat="server" OnClick="HomeLink_Click">
+                                          Home
+                                      </asp:LinkButton>
+                                  </li>
                               </ul>
                               <ul class="user_profile_dd">
                                  <li>
                                     <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="../wwwroot/images/logo2.png" alt="#" /><span class="name_user">Admin</span></a>
                                     <div class="dropdown-menu">
-                                       <a class="dropdown-item" href="profile.html">My Profile</a>
-                                       <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                        <asp:LinkButton ID="LinkButton2" class="dropdown-item" runat="server" OnClick="Dashboard_Click">Profile</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton6" class="dropdown-item" runat="server" OnClick="Logout_Click"><span>Log Out</span> <i class="fa fa-sign-out"></i></asp:LinkButton>
                                     </div>
                                  </li>
                               </ul>
@@ -100,18 +105,17 @@
                      </div>
                   </nav>
                </div>
-                <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-    </form>
             </div>
       
                <!-- end topbar -->
     
     </div>
     </div>
+         </form>
        <script src="../wwwroot/js/CDNs/popper.min.js"></script>
        <script src="../wwwroot/js/CDNs/bootstrap.min.js"></script>
       <!-- wow animation -->
@@ -133,5 +137,6 @@
       <!-- custom js -->
        <script src="../wwwroot/js/CDNs/custom.js"></script>
       <script></script>
+       
 </body>
 </html>

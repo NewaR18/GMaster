@@ -95,5 +95,6 @@ namespace GarbageMaster.Pages
             }
 
         }
+        
     }
 }

@@ -669,6 +669,7 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\Alerts.js" />
     <Content Include="wwwroot\js\CDNs\analyser.js" />
     <Content Include="wwwroot\js\CDNs\animate.js" />
     <Content Include="wwwroot\js\CDNs\bootstrap-select.js" />

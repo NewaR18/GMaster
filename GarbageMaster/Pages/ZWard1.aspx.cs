@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Net.Mail;
 using System.Reflection.Emit;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -50,11 +51,12 @@ namespace GarbageMaster.Pages
         protected void TruckSent(object sender, EventArgs e)
         {
             _bll.mailsend(Label1.Text,1);
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "AlertforTruckSent()", true);
         }
         protected void Checkedout(object sender, EventArgs e)
         {
             _dll.setonfire(1);
-            Response.Redirect("ZWard1.aspx");
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "AlertforCheckedOut('ZWard1.aspx')", true);
         }
     }
 }

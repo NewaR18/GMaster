@@ -10,24 +10,15 @@
     <script src="../wwwroot/js/CDNs/jquery.dataTables.min.js"></script>
     <script src="../wwwroot/js/CDNs/dataTables.semanticui.min.js"></script>
     <script src="../wwwroot/js/CDNs/semantic.min.js"></script>
-    <link href="../wwwroot/css/maps.css" rel="stylesheet" />
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".table").prepend($("<thead></thead").append($(this).find("tr:first"))).DataTable()({
-                columnDefs: [
-                    { width: 300, targets: 0 }
-                ],
-                fixedColumns: false
-            });
-        });
-    </script>
+    <link href="../wwwroot/css/maps.css" rel="stylesheet" /><script src="../wwwroot/js/CDNs/sweetalert2.all.min.js"></script><script src="../wwwroot/js/Alerts.js"></script>
+    
     <style>
         .mytruck2{
             color:black;
             border:1px solid;
             border-radius:1px;
             background-color:#04736a;
-            color:white;
+            color:white;width: 100px;text-align:center;
         }
     </style>
 </asp:Content>
@@ -47,9 +38,9 @@
             <asp:BoundField DataField="DateReviewed" HeaderText="Last Reviewed On"></asp:BoundField>
         </Columns>
     </asp:GridView>
-        <div class="text-align-end">
-            <asp:LinkButton CssClass="mytruck2 p-2" ID="sendtruck" runat="server" Text="Send Truck" OnClick="TruckSent"></asp:LinkButton>
-            <asp:LinkButton CssClass="mytruck2 p-2" style="background-color:#ff5a5a" ID="checkout" runat="server" Text="Checkout" OnClick="Checkedout"></asp:LinkButton>
+        <div class="text-align-end d-flex justify-content-between m-2">
+            <asp:LinkButton  ID="sendtruck" runat="server" OnClick="TruckSent"><div class="mytruck2 p-2">Send Truck</div></asp:LinkButton>
+            <asp:LinkButton ID="checkout" runat="server" OnClick="Checkedout"><div class="mytruck2 p-2" style="background-color:#ff5a5a">Checkout</div></asp:LinkButton>
         </div>
     </div>
         </div>

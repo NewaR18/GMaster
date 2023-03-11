@@ -22,3 +22,9 @@ C:\Users\sudip.shrestha\source\repos\garbageMasterFeb22\GarbageMaster119\Functio
 C:\Users\sudip.shrestha\source\repos\garbageMasterFeb22\GarbageMaster119\Functions\obj\Debug\Functions.csproj.CoreCompileInputs.cache
 C:\Users\sudip.shrestha\source\repos\garbageMasterFeb22\GarbageMaster119\Functions\obj\Debug\Functions.dll
 C:\Users\sudip.shrestha\source\repos\garbageMasterFeb22\GarbageMaster119\Functions\obj\Debug\Functions.pdb
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\bin\Debug\Functions.dll
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\bin\Debug\Functions.pdb
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\obj\Debug\Functions.csproj.AssemblyReference.cache
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\obj\Debug\Functions.csproj.CoreCompileInputs.cache
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\obj\Debug\Functions.dll
+C:\Users\sudip\source\repos\GMaster\GMaster\Functions\obj\Debug\Functions.pdb

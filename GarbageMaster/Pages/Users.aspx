@@ -17,6 +17,9 @@
         #grid_json{
             text-align:center!important;
         }
+        .pq-grid-center{
+            text-align:center!important;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

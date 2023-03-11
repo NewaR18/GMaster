@@ -1,7 +1,9 @@
 ﻿$(function () {
     var obj = {
         width: "100%",
+        height: 466,
         autoRow: true,
+        editable:false,
         resizable: false,
         title: "Users",
         showBottom: true,
