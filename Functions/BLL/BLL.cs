@@ -113,7 +113,7 @@ namespace Functions.Business_Logic_Layer
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("chessmastersudip2015@gmail.com", "fczbnzfcvqnzabwg");
+                smtp.Credentials = new System.Net.NetworkCredential("garbagemaster100@gmail.com", "vwddpwdpqedpqkaw");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
@@ -123,7 +123,7 @@ namespace Functions.Business_Logic_Layer
             {
                 MailMessage mail = new MailMessage();
                 mail.To.Add("sudipshrestha960@gmail.com");
-                mail.From = new MailAddress("chessmastersudip2015@gmail.com");
+                mail.From = new MailAddress("garbagemaster100@gmail.com");
                 int data = Convert.ToInt32(n);
                 mail.Subject = "Important Notification - Garbage Collection Schedule";
                 mail.Body = "Dear Residents,\r\n\r\nThis is to inform you that the garbage truck will be making its rounds in your area tomorrow. In order to ensure a smooth and efficient collection, please have your trash properly bagged. \r\n\r\nPlease note that only household waste will be collected. Hazardous materials, such as chemicals, batteries, and electronics, cannot be disposed of with regular trash and must be disposed of separately.\r\n\r\nWe appreciate your cooperation and efforts to keep our community clean and healthy. If you have any questions or concerns, please do not hesitate to contact us.\r\n\r\nThank you for your understanding.\r\n\r\nBest regards,\r\nGarbage Master\r\nPhone No: 9861141726 \r\nEmail: sudipshrestha960@gmail.com";
@@ -131,7 +131,7 @@ namespace Functions.Business_Logic_Layer
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("chessmastersudip2015@gmail.com", "fczbnzfcvqnzabwg");
+                smtp.Credentials = new System.Net.NetworkCredential("garbagemaster100@gmail.com", "vwddpwdpqedpqkaw");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
@@ -154,14 +154,14 @@ namespace Functions.Business_Logic_Layer
             HttpContext.Current.Session["Email"] = email;
             MailMessage mail = new MailMessage();
             mail.To.Add(email);
-            mail.From = new MailAddress("chessmastersudip2015@gmail.com");
+            mail.From = new MailAddress("garbagemaster100@gmail.com");
             mail.Subject = "Password Reset Code";
             mail.Body = "Dear User,\r\n\r\nWe have received a request to reset your password for your account with us. To proceed, please enter the following 6-digit code to confirm your identity:"+s+".\r\n\r\nIf you did not make this request, please ignore this email and your password will remain unchanged.\r\n\r\nThank you for using our services.\r\n\r\nBest regards,\r\nGarbage Master";
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 587;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new System.Net.NetworkCredential("chessmastersudip2015@gmail.com", "fczbnzfcvqnzabwg");
+            smtp.Credentials = new System.Net.NetworkCredential("garbagemaster100@gmail.com", "vwddpwdpqedpqkaw");
             smtp.EnableSsl = true;
             smtp.Send(mail);
             return "sent";

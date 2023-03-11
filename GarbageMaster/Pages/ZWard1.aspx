@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="ZWard1.aspx.cs" Inherits="GarbageMaster.Pages.ZWard1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="ZWard1.aspx.cs" Inherits="GarbageMaster.Pages.ZWard1" Async="true" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../wwwroot/css/CDNS/leaflet.css" rel="stylesheet" />
     <link rel="stylesheet" href="../wwwroot/css/CDNS/leaflet.css" />
