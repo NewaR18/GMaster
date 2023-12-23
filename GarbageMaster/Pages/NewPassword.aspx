@@ -25,15 +25,15 @@
                 <div class="card-body">
                   <div class="pt-4 pb-2">
                     <h5 class="card-title text-center pb-0 fs-4 gogreen2">Reset Password</h5>
-                    <p class="text-center small gogreen2">Please check your inbox and enter 6 digit code provided in the email</p>
+                    <p class="text-center small gogreen2">Please enter yoiur new password</p>
                   </div>
                       <div  class="row g-3" data-bind="with: Master">
                           <div class="col-md-12 hait">
-                            <input data-bind="value:pw" class="form-control" id="inputUsername4" placeholder="Enter your Password">
+                            <input data-bind="value:pw" type="password" class="form-control" id="inputUsername4" placeholder="Enter your Password">
                             <span id="errorpw" class="errorfname2"></span>
                           </div>
                           <div class="col-md-12 hait">
-                            <input data-bind="value:cpw" class="form-control" id="inputUsername5" placeholder="Confirm Your Password">
+                            <input data-bind="value:cpw" type="password" class="form-control" id="inputUsername5" placeholder="Confirm Your Password">
                             <span id="errorcpw" class="errorfname2"></span>
                           </div>
                           <div class="col-12 makeitmid">

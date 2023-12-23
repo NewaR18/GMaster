@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-          <p class="mypdesc">As our project is cross platform, we have divided our work based on our expertise. For web application, web design part is handled by Mr. Pratik Khadka. Map integration using different libraries is fulfilled by Mr. Anil Kumal and the development of web application is completed by Mr. Sudip Shrestha</p>
+          <p class="mypdesc">As our project is cross platform, we have divided our work based on our expertise. For web application, web design part is handled by Mr. Pratik Khadka and the development of web application is done by Mr. Sudip Shrestha</p>
           <p class="mypdesc">As for the development of Android Application, All the frontend, JSON Manipulation, UI/UX design and Map Integration part is completed by Mr. Anil Kumal and Mr. Pratik Khadka. Whereas the session, business logic and database logic layer is completed by Mr. Sudip Shrestha</p>
       </div>
     </section>

@@ -18,7 +18,7 @@
             <form id="form1" runat="server">
                 <nav class="navbar navbar-expand-sm defcolor2 my-0">
                     <div>
-                      <a class="navbar-brand" href="Pages/HomePage.aspx"><img src="~/wwwroot/images/logo1.png"  runat="server"  class="logo" alt="logo" /></a>
+                      <a class="navbar-brand" href="../Pages/HomePage.aspx"><img src="~/wwwroot/images/logo1.png"  runat="server"  class="logo" alt="logo" /></a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -66,7 +66,7 @@
                 <div class="defcolor3">
                 <footer class="row py-5 my-0 mx-5 border-top">
     <div class="col mb-2 me-3">
-      <a href="Pages/HomePage.aspx" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+      <a href="../Pages/HomePage.aspx" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
         <img src="~/wwwroot/images/logo2.png"  runat="server"  class="logo2" alt="logo" />
       </a>
       <p class="est">Garbage Master</p>

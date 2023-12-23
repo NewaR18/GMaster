@@ -54,12 +54,12 @@
                       </div>
                       <div class="col-md-6 hait">
                         <label for="inputPassword4" class="form-label">Password</label>
-                        <input data-bind="value:password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
+                        <input data-bind="value:password" type="password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
                         <span id="errorpassword" class="errorfname2"></span>
                       </div>
                       <div class="col-md-6 hait">
                         <label for="inputConfirmPassword4" class="form-label">Confirm Password</label>
-                        <input data-bind="value:cpassword" class="form-control" id="inputConfirmPassword4" placeholder="Enter your Confirm Password">
+                        <input data-bind="value:cpassword" type="password" class="form-control" id="inputConfirmPassword4" placeholder="Enter your Confirm Password">
                         <span id="errorcpassword" class="errorfname2"></span>
                       </div>
                       <div class="col-md-5 hait">

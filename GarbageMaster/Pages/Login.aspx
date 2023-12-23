@@ -36,7 +36,7 @@
                           </div>
                           <div class="col-md-12 hait">
                             <label for="inputPassword4" class="form-label">Password</label>
-                            <input data-bind="value:password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
+                            <input data-bind="value:password" type="password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
                             <span id="errorpassword" class="errorfname2"></span>
                           </div>
                           <div class="col-12 makeitmid">
